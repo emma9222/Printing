@@ -1,0 +1,335 @@
+@charset "UTF-8";
+* {
+  position: relative;
+  box-sizing: border-box;
+  font-family: "微軟正黑體", "arial";
+  position: relative;
+}
+
+h1, h2, h3, h4 {
+  font-weight: bold;
+}
+
+h5, h6, p {
+  font-weight: normal;
+}
+
+section {
+  padding: 50px;
+}
+
+html, body {
+  margin: 0;
+  width: 100%;
+}
+
+body {
+  min-width: 500px;
+}
+
+nav.navbar {
+  padding: 0;
+}
+nav.navbar ul {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background-color: #fff;
+  padding: 12px 70px;
+  color: #333333;
+  transition: 0.6s;
+}
+nav.navbar ul a {
+  text-decoration: none;
+  color: gray;
+  transition: 0.3s;
+}
+nav.navbar ul a:hover {
+  text-decoration: none;
+  color: #ff6e3a;
+}
+nav.navbar ul li {
+  list-style: none;
+}
+nav.navbar ul .left {
+  float: left;
+}
+nav.navbar ul .right {
+  float: right;
+  margin-left: 30px;
+  font-size: 15px;
+}
+
+.navbar.change ul {
+  background-color: transparent;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  transition: 0.6s;
+}
+.navbar.change ul a {
+  color: #fff;
+}
+
+header {
+  text-align: center;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-image: url(https://pic3.zhimg.com/96799d60c4af201ee691dff8322c8815_1200x500.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.8);
+}
+header hr {
+  border: solid 2px #ff6e3a;
+  max-width: 50px;
+  background-color: #ff6e3a;
+}
+header h1 {
+  margin-bottom: 70px;
+  font-size: 50px;
+}
+header h6 {
+  color: #fff;
+  letter-spacing: 20px;
+}
+
+section#intro {
+  background-color: #ff6e3a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section#intro img {
+  width: 400px;
+  mix-blend-mode: multiply;
+}
+section#intro h2 {
+  margin-left: 50px;
+  color: #333333;
+  line-height: 50px;
+}
+
+section#about .stories {
+  display: flex;
+}
+section#about .stories .story {
+  flex: 1;
+  margin-right: 10px;
+  padding: 10px;
+}
+section#about .stories .story .img {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+}
+section#about .stories .story .img img {
+  width: 150%;
+}
+section#about .stories .story h4 {
+  margin-top: 20px;
+}
+section#about .stories .story p {
+  opacity: 0.6;
+}
+section#about .stories .story3.story {
+  margin-right: 0;
+}
+
+section#story {
+  padding: 0;
+}
+section#story .box {
+  display: flex;
+  height: auto;
+  padding: 0;
+}
+section#story .box .left {
+  width: 400px;
+  height: auto;
+  flex-shrink: 0;
+  background-color: #333333;
+}
+section#story .box .left .map {
+  background-image: url(https://stutzfamily.com/mrstutz/Maps/USHistory/europe1938.gif);
+  width: auto;
+  height: 100%;
+  background-size: cover;
+}
+section#story .box .right {
+  background-color: #333333;
+  color: #fff;
+  text-align: center;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section#story .box .right hr {
+  border: 0.5px solid #fff;
+  background-color: #fff;
+}
+section#story .box .right .icons {
+  display: flex;
+}
+section#story .box .right .icons .copy, section#story .box .right .icons .transfer, section#story .box .right .icons .keep {
+  flex: 1;
+}
+section#story .box .right .icons i {
+  transform: scale(2.5);
+  margin-top: 30px;
+}
+section#story .box .right .icons h5 {
+  margin: 30px 0px;
+}
+
+section#future {
+  overflow: hidden;
+}
+section#future .box {
+  display: flex;
+}
+section#future .box .left {
+  flex: 1;
+  padding-right: 40px;
+}
+section#future .box .left img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+section#future .box .right {
+  flex: 1;
+}
+section#future .box .right i {
+  transform: scale(2);
+  margin: 10px;
+}
+
+footer.more {
+  text-align: center;
+  background-image: url(https://pic3.zhimg.com/96799d60c4af201ee691dff8322c8815_1200x500.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer.more .center h3 {
+  color: #fff;
+  margin-bottom: 30px;
+  text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.8);
+}
+footer.more .center input {
+  width: 100%;
+  border-radius: 5px;
+  border: solid 1px #cccccc;
+  text-align: center;
+  color: #999999;
+  padding: 3px;
+}
+footer.more .center hr {
+  border: solid 2px #ff6e3a;
+  max-width: 50px;
+  background-color: #ff6e3a;
+}
+footer.more .center a {
+  color: #333333;
+  padding: 5px 15px;
+  border-radius: 5px;
+  background-color: #fff;
+  text-decoration: none;
+}
+footer.more .center a:hover {
+  background-color: #cccccc;
+}
+
+@media screen and (max-width: 768px) {
+  nav.navbar ul {
+    padding: 15px;
+  }
+  nav.navbar ul .right {
+    margin-left: 20px;
+  }
+
+  header h1 {
+    font-size: 45px;
+  }
+  header h6 {
+    letter-spacing: 5px;
+  }
+
+  section#intro {
+    display: block;
+    text-align: center;
+  }
+  section#intro img {
+    width: 70%;
+  }
+  section#intro h2 {
+    margin-left: 0px;
+    font-size: 25px;
+    margin-top: 30px;
+  }
+
+  section#about .stories {
+    display: block;
+  }
+  section#about .stories .story .img {
+    height: 250px;
+  }
+  section#about .stories .story .img img {
+    width: 100%;
+  }
+
+  section#story .box {
+    display: block;
+  }
+  section#story .box .left {
+    width: 100%;
+  }
+  section#story .box .left .map {
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+  }
+
+  section#future .box {
+    display: block;
+  }
+  section#future .box .left {
+    width: 100%;
+    padding-right: 0px;
+    padding-bottom: 20px;
+  }
+  section#future .box .left img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  nav.navbar ul .right {
+    display: none;
+  }
+
+  header .center h1 {
+    font-size: 40px;
+  }
+
+  section#intro img {
+    width: 80%;
+  }
+  section#intro h2 {
+    font-size: 20px;
+  }
+
+  section#about h4 {
+    margin-top: 0;
+  }
+}
